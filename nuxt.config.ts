@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
   css: ["assets/css/main.css"],
-  modules: ["@nuxtjs/seo"],
+  modules: ["@nuxtjs/seo", "@nuxt/icon"],
   future: {
     compatibilityVersion: 4,
   },
