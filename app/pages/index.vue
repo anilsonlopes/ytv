@@ -7,16 +7,17 @@
   >
     <!-- topbar -->
     <div class="flex items-center space-x-4">
-      <div>Tv</div>
-
-      <div class="flex w-full -space-x-px">
-        <div
-          class="border rounded-l-lg focus:bg-black/75 focus:border-white border-neutral-700 focus:outline-none px-2 w-full text-lg h-10"
-        />
-        <span>
-          <Icon name="heroicons:magnifying-glass-20-solid" />
-        </span>
+      <div class="flex items-end space-x-1 text-lg">
+        <strong class="font-mono">QUILA</strong>
+        <small class="font-serif">tv</small>
       </div>
+
+      <nuxt-link
+        class="flex items-center border rounded-lg border-neutral-700 px-2 w-full h-10"
+        to="#"
+      >
+        <Icon name="heroicons:magnifying-glass-20-solid" />
+      </nuxt-link>
       <div>
         <button
           type="button"
