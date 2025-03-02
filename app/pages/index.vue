@@ -1,25 +1,21 @@
 <template>
   <div
     class="p-10 bg-neutral-900 bg-no-repeat bg-cover text-neutral-100 h-screen overflow-y-auto flex flex-col justify-between"
-    style="
-      background-image: url(https://images.unsplash.com/photo-1606937295547-bc0f668595b3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    "
+    :style="{
+      backgroundImage: `url(${backdropImage})`,
+    }"
   >
     <!-- topbar -->
     <div class="flex items-center space-x-4">
       <div>Tv</div>
 
-      <div class="flex w-full">
-        <input
-          type="text"
-          class="border rounded-l-full border-neutral-700 w-full text-lg h-10"
+      <div class="flex w-full -space-x-px">
+        <div
+          class="border rounded-l-lg focus:bg-black/75 focus:border-white border-neutral-700 focus:outline-none px-2 w-full text-lg h-10"
         />
-        <button
-          type="button"
-          class="h-10 rounded-r-full border border-neutral-700 w-20 flex items-center justify-center"
-        >
+        <span>
           <Icon name="heroicons:magnifying-glass-20-solid" />
-        </button>
+        </span>
       </div>
       <div>
         <button
@@ -61,6 +57,15 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const imagesUrl = [
+  "https://images.unsplash.com/photo-1702731798609-ef80a827199a?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+];
+
+const backdropImage = computed(() => {
+  const randomIndex = Math.floor(Math.random() * imagesUrl.length);
+  return imagesUrl[randomIndex];
+});
+</script>
 
 <style></style>
