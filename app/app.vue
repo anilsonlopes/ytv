@@ -7,6 +7,6 @@
 
 <script lang="ts" setup>
 useSeoMeta({
-  title: "Tv",
+  title: "Quila TV: Assista Filmes Grátis, Séries e Programas de TV Ao Vivo",
 });
 </script>

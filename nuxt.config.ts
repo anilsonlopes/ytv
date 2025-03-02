@@ -15,4 +15,7 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true,
   },
+  site: {
+    name: "Quila Tv",
+  },
 });
