@@ -1,9 +1,6 @@
 <template>
   <div
-    class="p-10 bg-neutral-900 bg-no-repeat bg-cover text-neutral-100 h-screen overflow-y-auto flex flex-col justify-between"
-    :style="{
-      backgroundImage: `url(${backdropImage})`,
-    }"
+    class="p-10 bg-neutral-900 text-neutral-100 h-screen overflow-y-auto flex flex-col justify-between"
   >
     <!-- topbar -->
     <div class="flex items-center space-x-4">
@@ -31,25 +28,14 @@
       />
     </div>
 
-    <MoviesHighlight />
-    <MoviesWhatToWatchThisWeek />
-    <MoviesTop10OnTvThisWeek />
-    <MoviesMoreToWatch />
-    <MoviesTvFavourites />
-    <MoviesTrailers />
-    <MoviesTopNews />
+    <div class="py-10">
+      <MoviesHighlight />
+      <MoviesWhatToWatchThisWeek />
+      <MoviesTop10OnTvThisWeek />
+      <MoviesMoreToWatch />
+      <MoviesTvFavourites />
+      <MoviesTrailers />
+      <MoviesTopNews />
+    </div>
   </div>
 </template>
-
-<script lang="ts" setup>
-const imagesUrl = [
-  "https://images.unsplash.com/photo-1702731798609-ef80a827199a?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-];
-
-const backdropImage = computed(() => {
-  const randomIndex = Math.floor(Math.random() * imagesUrl.length);
-  return imagesUrl[randomIndex];
-});
-</script>
-
-<style></style>

@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
   css: ["assets/css/main.css"],
-  modules: ["@nuxtjs/seo", "@nuxt/icon"],
+  modules: ["@nuxtjs/seo", "@nuxt/icon", "nuxt-swiper"],
   future: {
     compatibilityVersion: 4,
   },
