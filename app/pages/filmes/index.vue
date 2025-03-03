@@ -31,31 +31,13 @@
       />
     </div>
 
-    <!-- horizontal menu -->
-    <ul class="grid grid-cols-4 gap-10 items-end">
-      <IndexMenuItem
-        icon="solar:tv-line-duotone"
-        title="Tv Ao vivo"
-        description="+5000 canais"
-        active
-      />
-      <IndexMenuItem
-        icon="solar:clapperboard-play-line-duotone"
-        title="Filmes"
-        description="+1200 filmes"
-        :to="{ name: 'filmes' }"
-      />
-      <IndexMenuItem
-        icon="solar:posts-carousel-vertical-bold-duotone"
-        title="Séries"
-        description="+1200 séries"
-      />
-      <IndexMenuItem
-        icon="solar:radio-line-duotone"
-        title="Rádios"
-        description="+5000 estações"
-      />
-    </ul>
+    <MoviesHighlight />
+    <MoviesWhatToWatchThisWeek />
+    <MoviesTop10OnTvThisWeek />
+    <MoviesMoreToWatch />
+    <MoviesTvFavourites />
+    <MoviesTrailers />
+    <MoviesTopNews />
   </div>
 </template>
 
