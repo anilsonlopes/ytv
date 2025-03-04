@@ -35,7 +35,6 @@
       <MoviesMoreToWatch />
       <MoviesTvFavourites />
       <MoviesTrailers />
-      <MoviesTopNews />
     </div>
   </div>
 </template>
