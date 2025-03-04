@@ -49,6 +49,7 @@
         icon="solar:posts-carousel-vertical-bold-duotone"
         title="Séries"
         description="+1200 séries"
+        :to="{ name: 'series' }"
       />
       <IndexMenuItem
         icon="solar:radio-line-duotone"
