@@ -5,6 +5,13 @@
       <span class="text-red-400">Melhores escolhas:</span> programas de TV e
       filmes só para você
     </p>
+
+    <div class="flex space-x-5">
+      <div v-for="movie in movies.all" :key="movie.id">
+        <MadPoster :movie="movie" />
+      </div>
+    </div>
+
     <div class="flex justify-center space-x-4">
       <nuxt-link to="#" class="border rounded px-4 py-2">
         Catálogo de filmes
