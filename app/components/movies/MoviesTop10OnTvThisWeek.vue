@@ -9,18 +9,9 @@
     </div>
     <ClientOnly>
       <swiper-container :slides-per-view="'auto'" :space-between="25">
-        <swiper-slide
-          v-for="movie in movies.all"
-          class="h-72 w-52"
-          :key="movie.id"
-        >
-          <img
-            :src="movie.poster"
-            class="h-72 w-52 object-cover"
-            :alt="movie.title"
-          />
+        <swiper-slide v-for="movie in movies.all" class="w-52" :key="movie.id">
+          <MadPoster :movie="movie" />
         </swiper-slide>
-        <div class="swiper-pagination"></div>
       </swiper-container>
     </ClientOnly>
   </div>

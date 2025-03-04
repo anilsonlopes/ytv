@@ -1,8 +1,20 @@
-const movies = [
+export type Movie = {
+  id: number;
+  title: string;
+  slug: string;
+  year: number;
+  videoId: string;
+  genre: string;
+  poster: string;
+  summary: string;
+};
+
+const movies: Movie[] = [
   {
     id: 1,
     title: "Vendo ou Alugo",
     slug: "vendo-ou-alugo",
+    year: 2013,
     videoId: "QA1N2CEi9a8",
     genre: "Comédia",
     poster:
@@ -16,6 +28,7 @@ const movies = [
     slug: "o-pai-o",
     videoId: "i7DA5c4umKA",
     genre: "Comédia",
+    year: 2007,
     poster:
       "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1evrI6H61T8AlmKHtT4qLt5dvcNQgKGf3ad7BJGPNPY2ezc4Az3lrTFtDTPZXyc-37qD6FoquC09HKtBqcRZLDDinwSf9lY0KBRz_ELF7jvyhIlfgY9ZwDTR9i2OpUYfKwiq6emaRZpip/s1600/dvd.JPG",
     summary:
@@ -25,6 +38,7 @@ const movies = [
     id: 3,
     title: "A casa fantastica",
     slug: "a-casa-fantastica",
+    year: 2014,
     videoId: "2OHPGLfFGZY",
     genre: "Infantil",
     poster: "https://i.ytimg.com/vi/2OHPGLfFGZY/maxresdefault.jpg",
