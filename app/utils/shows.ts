@@ -24,7 +24,7 @@ const shows: Show[] = [
   },
   {
     id: 2,
-    title: "Sbrenatural",
+    title: "Sobrenatural",
     slug: "sobrenatural",
     genres: ["Drama, Mistério", "Sci-Fi", "Fantasia"],
     year: 2007,

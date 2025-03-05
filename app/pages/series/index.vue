@@ -34,7 +34,6 @@
       <ShowsTop10OnTvThisWeek />
       <ShowsMoreToWatch />
       <ShowsTvFavourites />
-      <ShowsTrailers />
     </div>
   </div>
 </template>

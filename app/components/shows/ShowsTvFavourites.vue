@@ -9,8 +9,19 @@
     </div>
     <ClientOnly>
       <swiper-container :slides-per-view="'auto'" :space-between="25">
-        <swiper-slide v-for="movie in movies.all" class="w-52" :key="movie.id">
-          <MadPoster :movie="movie" show-info />
+        <swiper-slide v-for="show in shows.all" class="w-52" :key="show.id">
+          <MadPoster
+            :movie="{
+              genre: String(show.genres[0]),
+              id: show.id,
+              poster: show.poster,
+              slug: show.slug,
+              summary: show.summary,
+              title: show.title,
+              videoId: '',
+              year: show.year,
+            }"
+          />
         </swiper-slide>
       </swiper-container>
     </ClientOnly>

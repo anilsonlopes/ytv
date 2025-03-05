@@ -26,7 +26,7 @@
 
     <div class="flex justify-center space-x-4">
       <nuxt-link to="#" class="border rounded px-4 py-2">
-        Catálogo de filmes
+        Catálogo de séries
       </nuxt-link>
       <nuxt-link to="#" class="border rounded px-4 py-2">
         Mais popular
